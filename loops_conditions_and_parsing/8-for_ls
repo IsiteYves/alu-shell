@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# List files, remove first dash prefix
+for f in *; do [ -f "$f" ] && echo "${f#*-}"; done

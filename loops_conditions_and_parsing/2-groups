@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Print all groups of the current user
+groups
