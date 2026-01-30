@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Display username:uid:home for /etc/passwd
-while IFS=: read -r user pass uid gid name home shell; do echo "$user:$uid:$home"; done < /etc/passwd
+while IFS=: read -r user _ uid _ _ home _; do echo "$user:$uid:$home"; done < /etc/passwd
