@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# FizzBuzz from 1 to 100
-for i in {1..100}; do if [ $((i%15)) -eq 0 ]; then echo "FizzBuzz"; elif [ $((i%3)) -eq 0 ]; then echo "Fizz"; elif [ $((i%5)) -eq 0 ]; then echo "Buzz"; else echo $i; fi; done
+# FizzBuzz 1-100
+count=1
+while [ $count -le 100 ]; do if [ $((count%15)) -eq 0 ]; then echo "FizzBuzz"; elif [ $((count%3)) -eq 0 ]; then echo "Fizz"; elif [ $((count%5)) -eq 0 ]; then echo "Buzz"; else echo $count; fi; ((count++)); done

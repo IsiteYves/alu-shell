@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Change owner of hello to betty
-chown betty hello

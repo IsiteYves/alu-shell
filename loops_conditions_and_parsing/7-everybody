@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Add execution permission to everyone for the file hello
-chmod a+x hello
