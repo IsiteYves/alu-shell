@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Display IP and HTTP code from apache-access.log
-awk '{print $1, $9}' apache-access.log
+# Display visitor counts by IP and HTTP code
+
+awk '{counts[$1" "$9]++} END {for (k in counts) print counts[k], k}' access.log | sort -nr
