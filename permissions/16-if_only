@@ -1,11 +1,4 @@
-#!/usr/bin/env bash
-# Change owner of 'hello' to vincent if current owner is guillaume
-
-# Get current owner of hello
-current_owner=$(stat -c "%U" hello)
-
-# Check if owner is guillaume
-if [ "$current_owner" = "guillaume" ]; then
-	    sudo chown vincent hello
+#!/bin/bash
+if [ "$(stat -c %U hello)" = "guillaume" ]
+then chown vincent hello
 fi
-
