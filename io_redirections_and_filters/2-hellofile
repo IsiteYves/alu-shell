@@ -1,5 +1,2 @@
 #!/bin/bash
-echo "\"(Ôo)'" > 1-confused_smiley
-
-# Task 2: Display /etc/passwd
 cat /etc/passwd

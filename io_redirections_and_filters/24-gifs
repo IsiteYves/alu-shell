@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -o -name "*.GIF" | rev | cut -d/ -f1 | rev | sed 's/\.gif$//I' | sort -f
-echo
+find . -type f \( -name '*.gif' -o -name '*.GIF' \) | while IFS= read -r f; do f="${f##*/}"; echo "${f%.*}"; done | sort -f
