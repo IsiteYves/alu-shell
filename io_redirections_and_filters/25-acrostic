@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c1 | xargs printf '%s\n'
+echo $(cut -c1)
