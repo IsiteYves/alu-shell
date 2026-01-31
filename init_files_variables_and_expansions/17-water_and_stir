@@ -1,0 +1,1 @@
+echo "ibase=5; obase=9; $(echo $WATER | tr "water" "01234") + $(echo $STIR | tr "stir." "01234")" | bc | tr "012345678" "bestchol"
