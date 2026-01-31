@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -o -type f -name "*.GIF" | xargs -I {} sh -c 'f="{}"; f="${f##*/}"; f="${f%.*}"; echo "$f"' | LC_ALL=C sort -f
+find . -type f -name "*.gif" -printf "%f\n" | rev | cut -c 5- | rev | sort -f
