@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($(echo $WATER|tr wateir 012345) + $(echo $STIR|tr ti. 0123))) | tr 0123456789 stbeolhc
+printf "%x\n" $((5#$(echo $WATER | tr water 01234) + 4#$(echo $STIR | tr 'ti.r' 0123))) | tr 0123456789abcdef stbeolhc
