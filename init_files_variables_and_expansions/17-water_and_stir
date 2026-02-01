@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((WATER + STIR))|tr "0-9a-w" "a-z"
+echo $(($(echo $WATER|tr wateir 012345) + $(echo $STIR|tr ti. 0123))) | tr 0123456789 stbeolhc
