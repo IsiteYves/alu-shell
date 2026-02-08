@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# Groups visitors by IP and HTTP status code from any input file
-awk '{c[$1" "$9]++} END {for (k in c) print c[k], k}' | sort -rn
+# Processes any input log file, groups IP/Status, sorts, and strips whitespace
+awk '{c[$1" "$9]++} END {for (k in c) print c[k], k}' "$@" | sort -k1,1nr -k2,2 -k3,3 | awk '{$1=$1;print}'
